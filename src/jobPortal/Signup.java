@@ -2,7 +2,7 @@ package jobPortal;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 
-public class SignUpSystem {
+public class Signup {
     private String username;
     private String password;
     private String confirmPassword;
@@ -10,10 +10,10 @@ public class SignUpSystem {
     private String phoneNumber;
 
     // Constructor 1: No-arg constructor
-    public SignUpSystem() {}
+    public Signup() {}
 
     // Constructor 2: Parameterized constructor
-    public SignUpSystem(String username, String password, String confirmPassword, String email, String phoneNumber) {
+    public Signup(String username, String password, String confirmPassword, String email, String phoneNumber) {
         this.username = username;
         this.password = password;
         this.confirmPassword = confirmPassword;
@@ -116,13 +116,13 @@ public class SignUpSystem {
     }
 
     public static void main(String[] args) {
-        SignUpSystem signUpSystem = new SignUpSystem();
+        Signup signUpSystem = new Signup();
         signUpSystem.displaySignUpForm();
     }
 }
 
 // Subclass: JobSeeker
-class JobSeeker extends SignUpSystem {
+class JobSeeker extends Signup{
     private String resume;
 
     // Constructor
@@ -139,7 +139,7 @@ class JobSeeker extends SignUpSystem {
 }
 
 // Subclass: Employer
-class Employer extends SignUpSystem {
+class Employer extends Signup {
     private String company;
 
     // Constructor
