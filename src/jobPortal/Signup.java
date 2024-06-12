@@ -2,7 +2,9 @@ package jobPortal;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 
-public class SignUpSystem {
+
+//public class SignUpSystem { Class name must be the same with file name
+	public class Signup {
     private String username;
     private String password;
     private String confirmPassword;
@@ -10,10 +12,10 @@ public class SignUpSystem {
     private String phoneNumber;
 
     // Constructor 1: No-arg constructor
-    public SignUpSystem() {}
+    public Signup() {}
 
     // Constructor 2: Parameterized constructor
-    public SignUpSystem(String username, String password, String confirmPassword, String email, String phoneNumber) {
+    public Signup(String username, String password, String confirmPassword, String email, String phoneNumber) {
         this.username = username;
         this.password = password;
         this.confirmPassword = confirmPassword;
